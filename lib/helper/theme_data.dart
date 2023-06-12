@@ -39,6 +39,6 @@ InputDecoration inputDecoration(
       borderSide: BorderSide(color: Colors.transparent, width: 0.0),
     ),
     filled: true,
-    fillColor: transparentColor,
+    fillColor: lawnGreen.withOpacity(.2),
   );
 }

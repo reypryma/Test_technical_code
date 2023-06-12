@@ -3,6 +3,8 @@ import 'package:flutter/services.dart';
 import 'package:nb_utils/nb_utils.dart';
 import 'package:webmiss/helper/theme_data.dart';
 
+import 'helper/axis.dart';
+
 void main() {
   runApp(const MyApp());
 }
@@ -147,8 +149,9 @@ class _GenerateTriangleScreenState extends State<GenerateTriangleScreen> {
                   ),
                 ),
                 32.height,
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                Flex(
+                  mainAxisAlignment: MainAxisAlignment.spaceAround,
+                  direction: getAxis(context.width()),
                   children: [
                     AppButton(
                       textColor: black,
@@ -158,6 +161,7 @@ class _GenerateTriangleScreenState extends State<GenerateTriangleScreen> {
                       child: const Text('Generate Segitiga'),
                     ),
                     16.width,
+                    16.height,
                     AppButton(
                       color: yellowGreen,
                       textColor: black,
@@ -167,6 +171,7 @@ class _GenerateTriangleScreenState extends State<GenerateTriangleScreen> {
                       child: const Text('Generate Bilangan Ganjil'),
                     ),
                     16.width,
+                    16.height,
                     AppButton(
                       color: blueViolet,
                       textColor: black,
