@@ -1,16 +1,19 @@
-# webmiss
+# Flutter Web Task Project
 
-A new Flutter project.
+A Question and Answer
 
-## Getting Started
+## Status Question
+1. Answered
+2. Answered
+3. Not Answered within the time limit, but managed to fix and answer question. Just small typo not adding (~) before (/) equation
 
-This project is a starting point for a Flutter application.
+##Feature done before
+1. Added validation limiting user input to only number
+2. Refresh string state whenever there are changes
+3. Error if form empty
+4. Popup When Successfully Input String
 
-A few resources to get you started if this is your first Flutter project:
+## Demo Aplication
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+
