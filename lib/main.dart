@@ -81,17 +81,15 @@ class _GenerateTriangleScreenState extends State<GenerateTriangleScreen> {
     return temp;
   }
 
-  Future<String> generateListOdd(String s) async{
-    print( "You got ${int.parse(s)}");
-    List<int> temp = [2];
-    for(var i = 3 ; i <=  int.parse(s) ; i++){
-      if((i % 2) != 0){
-        temp.add(i);
-        // print(temp);
-      }
+  Future<String> generateListOdd(String s) async {
+    int limit = int.parse(s);
+    List<int> oddNumbers = [2];
+
+    for (var i = 3; i <= limit; i += 2) {
+      oddNumbers.add(i);
     }
-    print(temp);
-    return temp.toString();
+
+    return oddNumbers.toString();
   }
 
   String generatePrimeNumber(String s){
@@ -116,6 +114,7 @@ class _GenerateTriangleScreenState extends State<GenerateTriangleScreen> {
 
     return primes.toString();
   }
+
 
   @override
   Widget build(BuildContext context) {
