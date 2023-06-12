@@ -90,6 +90,7 @@ class _GenerateTriangleScreenState extends State<GenerateTriangleScreen> {
         // print(temp);
       }
     }
+    print(temp);
     return temp.toString();
   }
 
